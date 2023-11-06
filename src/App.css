@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+   font-family: "Inter";
+}
+
+.fontstyle {
+  font-style: normal;
+  font-weight: 600;
+  text-wrap: balance;
+  font-family: "Inter";
+}
+
+.wrap {
+  text-wrap: balance;
+}
+
+.text-style {
+  font-style: normal;
+}
+
+.box {
+  box-shadow: #F8BB15 2.4px 2.4px 3.2px;
+}
+.second-box {
+  box-shadow: #E94435 2.4px 2.4px 3.2px;
+}
+
+.arrow{
+  width: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow {
+    width: 100%;
+  }
+}
