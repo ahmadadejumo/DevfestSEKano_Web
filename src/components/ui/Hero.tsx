@@ -1,7 +1,9 @@
 import mobilehero from "../../assets/mobilehero.png"
 import desktophero from "../../assets/desktophero.png";
-// import group from "../../assets/group.png"
-import {CallToActionBtn} from "./CallToActionBtn"
+import group from "../../assets/group.png";
+import recyle from "../../assets/recyle.png"
+import {Button} from "./button";
+import arrow from "../../assets/arrow.svg"
 export const Hero = () => {
   return (
     <div className="flex gap-6 flex-col items-center justify-center relative">
@@ -11,15 +13,22 @@ export const Hero = () => {
        </div>
 
        <div>
-        <div className="mt-[3rem] sm:mt-[12rem] md:mt-[12rem]">
+        <div className="mt-[3rem] relative sm:mt-[12rem] md:mt-[12rem]">
+          <img src={group} alt="" className="absolute right-0 -z-10 w-[20%] md:w-[15%] md:right-10 md:-top-6 top-20"/>
           <h1 className="wrap text-center text-[1.5rem] md:text-[4.29788rem] font-semibold md:font-bold leading-normal md:leading-[5rem]">Welcome to the Devfest <br/> <span className="text-[#34A853]">Student Edition</span> Kano!</h1>
         </div>
-        <div className="w-[95%] mt-4 mx-auto md:w-[88%]">
-          <p className="text-center text-[#282828] text-[1rem] font-medium leading-[1rem] md:text-[1.5rem] md:font-medium text-style tracking-[-0.025rem] md:leading-[2.59375rem]">Gear up for a lit day in Kano 2023! Imagine 24 hours jam-packed with 40+ top  Tech influencers vibing on Software Development, AI, XR Tech, Gaming, Mobile trends, Cloud solutions, IP rights and Startup Funds. Get ready to experience the wildest DevFest Student Edition – the ultimate tech Confrence of the year! 🚀🔥</p>
+        <div className="w-[95%] relative mt-4 mx-auto md:w-[65%]">
+          <img src={recyle} alt="" className="absolute w-[20%] md:w-[15%] top-10 -left-4 md:-top-14 md:-left-28" />
+          <p className="text-center text-[#282828] text-[0.9rem] font-semibold leading-[1rem] md:text-[1rem] md:font-bold text-style tracking-[-0.025rem] md:leading-normal">Gear up for a lit day in Kano 2023! Imagine 24 hours jam-packed with 40+ top  Tech influencers vibing on Software Development, AI, XR Tech, Gaming, Mobile trends, Cloud solutions, IP rights and Startup Funds. Get ready to experience the wildest DevFest Student Edition – the ultimate tech Confrence of the year! 🚀🔥</p>
         </div>
-        <div className="flex justify-center gap-4 mt-8">
-           <CallToActionBtn cls_name="rounded-[3.375rem] md:rounded-[3rem] py-[0.21rem] box md:py-[1.5rem] px-[0.37rem] md:px-[2rem] hover:bg-[#5d8dd9] flex items-center" text="Get Your Tickets" bg="#34A853"/>
-           <CallToActionBtn cls_name="rounded-[3.375rem] md:rounded-[3rem] second-box py-[0.21rem] md:py-[1.5rem] px-[0.37rem] md:px-[2rem] bg-[#4285F4] hover:bg-[#5d8dd9] flex items-center" text="Apply to Volunteer" bg="#4285F4"/>
+        <div className="flex justify-center gap-1 md:gap-4 mt-8">
+            <Button className="rounded-[3.375rem] md:rounded-[3rem] box py-[0.21rem] md:py-[1.5rem] pl-[1.5rem] md:pl-[2rem] md:pr-[1rem] hover:bg-[#42b561] bg-[#34A853]  flex items-center md:gap-2"><span className="text-[0.9375rem] font-bold leading-normal tracking-[-0.025rem]text-style text-[#FFFFFF]">Get Your Tickets</span> 
+    <img src={arrow} alt="arrow" />
+    </Button>
+            <Button className="rounded-[3.375rem] md:rounded-[3rem] box py-[0.21rem] md:py-[1.5rem] pl-[1.5rem] md:pl-[2rem] md:pr-[1rem] hover:bg-[#5d8dd9] bg-[#4285F4]  flex items-center md:gap-2"><span className="text-[0.9375rem] font-bold leading-normal tracking-[-0.025rem]text-style text-[#FFFFFF]">Apply to Volunteer</span> 
+    <img src={arrow} alt="arrow" />
+    </Button>
+
     </div>
        </div>
       
