@@ -13,10 +13,10 @@ const Footer: React.FC<FooterProps> = () => {
 
            {/* Second Column */}
         <div className="mb-4 flex justify-center md:items-center">
-          <img src={footerimg} alt="Logo" className="" />
+          <img src={footerimg} alt="Logo" className="w-[50%] md:w-[70%]" />
         </div>
 
-      <div className="flex justify-center gap-2 w-full md:w-[66.6%] md:justify-evenly md:items-center md:flex-row-reverse">
+      <div className="flex justify-center gap-6 md:gap-2 w-full md:w-[66.6%] md:justify-evenly md:items-center md:flex-row-reverse">
          {/* Third Column */}
         <div>
           <h3 className="text-white text-center tex-[0.875rem] text-style font-semibold mb-2 leading-normal">Follow us on:</h3>

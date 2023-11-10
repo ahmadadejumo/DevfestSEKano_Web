@@ -66,9 +66,11 @@ export const CountDown: React.FC = () => {
             <CountdownItem value={timeRemaining.hours} label="Hours" />
             <CountdownItem value={timeRemaining.minutes} label="Minutes" />
 
-            <img src={time} alt="" className="absolute right-5 top-[4rem] md:right-[23rem] md:top-[8rem]" />
+            <div className="relative move">
+              <img src={time} alt="" className="absolute -right-4 -top-4 md:-right-[1rem] md:-top-4" />
             <CountdownItem value={timeRemaining.seconds} label="Seconds" />
 
+            </div>
             </div>
         </div>
         <img src={down} alt="img" className="absolute w-[5rem] md:w-[8rem] top-[10rem] right-[4rem] md:top-[15rem] md:right-[30rem]" />

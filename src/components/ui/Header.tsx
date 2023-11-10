@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 import arrow from '../../assets/arrow.svg';
 import menu from '../../assets/menu.svg';
+import {motion} from "framer-motion"
 
 interface HeaderProps {}
 
@@ -39,7 +40,8 @@ export const Header: React.FC<HeaderProps> = () => {
 
           <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
             <ul className="flex flex-col text-[#1E1E1E] md:flex-row md:gap-[1.9375rem] ">
-              <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
+              <li 
+              className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
                 <Link to="/"> Home</Link>
               </li>
               <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
@@ -55,12 +57,16 @@ export const Header: React.FC<HeaderProps> = () => {
           </div>
         </div>
 
-        <div className="flex md:order-2">
-          <Button className="rounded-[3.375rem] md:rounded-[3rem] box py-[0.21rem] md:py-[1.5rem] px-[0.5rem] md:pl-[2rem] md:pr-[1rem] bg-[#34A853] hover:bg-[#42b561] flex items-center gap-2">
+        <motion.div 
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        className="flex md:order-2">
+          <Button
+          className="btn rounded-[3.375rem] md:rounded-[3rem] box py-[0.21rem] md:py-[1.5rem] px-[0.5rem] md:pl-[2rem] md:pr-[1rem] bg-[#34A853] hover:bg-[#42b561] flex items-center gap-2">
             <span className="hidden md:block text-[0.9375rem] font-bold leading-normal tracking-[-0.025rem]text-style text-[#FFFFFF]">Get Your Tickets</span>
             <img src={arrow} alt="arrow" />
           </Button>
-        </div>
+        </motion.div>
 
         <ul
           ref={menuRef}
