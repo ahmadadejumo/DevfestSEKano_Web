@@ -17,7 +17,7 @@ type TimeRemaining = {
 
 export const CountDown: React.FC = () => {
     const targetDate = new Date('2023-12-02T08:00:00'); // Set your target date and time
-  const [timeRemaining, setTimeRemaining] = useState<TimeRemaining>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    const [timeRemaining, setTimeRemaining] = useState<TimeRemaining>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
 
     useEffect(() => {
@@ -42,9 +42,9 @@ export const CountDown: React.FC = () => {
 
   return (
     <div className="my-10 flex w-full justify-center items-center relative">
-        <div className="w-[90%] sm:w-[80%] md:w-[50%]">
+        <div className="w-[90%] sm:w-[80%] md:w-[70%]">
               <h2 className="text-[1.3rem] text-[#1E1E1E] text-center text-style md:text-[2.5rem] font-bold leading-normal tracking-[-0.0625rem]">Count-Down 😌</h2>
-            <img src={globe} alt="img" className="absolute w-[2.49431rem] left-0 md:left-12 md:w-[8rem]" />
+            <img src={globe} alt="img" className="absolute w-[2.49431rem] left-0 md:left-12 md:w-[7rem]" />
             
         <div className="bg-[#FFF1C4] py-4 md:py-5">
             <div className="heading flex justify-center items-center gap-10">
@@ -73,7 +73,7 @@ export const CountDown: React.FC = () => {
             </div>
             </div>
         </div>
-        <img src={down} alt="img" className="absolute w-[5rem] md:w-[8rem] top-[10rem] right-[4rem] md:top-[15rem] md:right-[30rem]" />
+        <img src={down} alt="img" className="absolute w-[5rem] md:w-[8rem] top-[10rem] right-[4rem] md:top-[19rem] md:right-[30rem]" />
 
         </div>
     </div>

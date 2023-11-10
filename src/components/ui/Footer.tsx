@@ -1,6 +1,7 @@
 import React from 'react';
 import footerimg from "../../assets/footerimg.png"
 import { Twitter, Instagram, Youtube, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 type imgSourece = {
   footerimg: string;
@@ -43,19 +44,19 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="mb-4">
           <ul>
             <li>
-              <a href="#" className="text-white text-center text-[0.975rem] text-style font-medium mb-2 leading-normal md:text-[1rem] md:font-semibold">
+              <Link to="/" className="text-white text-center text-[0.975rem] text-style font-medium mb-2 leading-normal md:text-[1rem] md:font-semibold">
                Sponsor Event
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-white text-center text-[0.975rem] text-style font-medium mb-2 leading-normal md:text-[1rem] md:font-semibold">
+              <Link to="/" className="text-white text-center text-[0.975rem] text-style font-medium mb-2 leading-normal md:text-[1rem] md:font-semibold">
                 Join the Community
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-white text-center text-[0.975rem] text-style font-medium mb-2 leading-normal md:text-[1rem] md:font-semibold">
+              <Link to="/" className="text-white text-center text-[0.975rem] text-style font-medium mb-2 leading-normal md:text-[1rem] md:font-semibold">
                 Apply to Speak
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
