@@ -47,25 +47,14 @@ box-shadow: -7px 9px 0px -1px rgba(0,0,0,0.76);
   width: 70%;
 }
 
-/* Initial state */
-/* .btn {
-  transform: scale(1);
-  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-} */
-
-/* Hover state */
-/* .btn:hover {
-  transform: scale(1.1);
-} */
-
 
 @media screen and (min-width: 768px) {
   .arrow {
     width: 100%;
   }
   .move:hover img{
-  right: -2.5rem;
-  top: -1.5rem;
+  right: -4rem;
+  top: -3rem;
   width: 50%;
 }
 }

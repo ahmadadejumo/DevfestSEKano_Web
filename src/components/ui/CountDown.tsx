@@ -7,6 +7,7 @@ import {useState} from "react"
 import {useEffect} from "react"
 import {CountdownItem } from "./CountdownItem"
 import time from "../../assets/time.svg"
+import under from "../../assets/under.png"
 
 type TimeRemaining = {
   days: number;
@@ -46,7 +47,8 @@ export const CountDown: React.FC = () => {
               <h2 className="text-[1.3rem] text-[#1E1E1E] text-center text-style md:text-[2.5rem] font-bold leading-normal tracking-[-0.0625rem]">Count-Down 😌</h2>
             <img src={globe} alt="img" className="absolute w-[2.49431rem] left-0 md:left-12 md:w-[7rem]" />
             
-        <div className="bg-[#FFF1C4] py-4 md:py-5">
+        <div className="bg-[#FFF1C4] py-4 md:py-5 relative">
+          <img src={under} alt="img" className='absolute -z-20 w-[21.06306rem] md:w-[55.25rem] md:h-[19.3125rem] right-8 top-10 md:top-4 md:right-6 '/>
             <div className="heading flex justify-center items-center gap-10">
 
                <div className="flex justify-center items-center mb-4 gap-3">
@@ -73,7 +75,7 @@ export const CountDown: React.FC = () => {
             </div>
             </div>
         </div>
-        <img src={down} alt="img" className="absolute w-[5rem] md:w-[8rem] top-[10rem] right-[4rem] md:top-[19rem] md:right-[30rem]" />
+        <img src={down} alt="img" className="absolute w-[5rem] md:w-[8rem] top-[10rem] right-[4rem] md:top-[19.5rem] md:right-[30rem]" />
 
         </div>
     </div>

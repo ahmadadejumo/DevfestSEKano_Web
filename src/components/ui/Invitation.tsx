@@ -5,7 +5,7 @@ import arrow from "../../assets/arrow.svg";
 import {motion} from "framer-motion"
 export const Invitation = () => {
   return (
-    <div className="flex justify-center items-center mt-20">
+    <div className="flex justify-center items-center mt-[2rem] md:mt-20">
      <div>
        <img src={attend} alt="img" className="w-[400px] h-[300px] object-scale-down mx-auto md:w-[50%] md:h-[50%]"/>
     <div className='flex justify-center items-center'>

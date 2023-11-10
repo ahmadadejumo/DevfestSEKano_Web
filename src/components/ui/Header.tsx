@@ -6,7 +6,9 @@ import arrow from '../../assets/arrow.svg';
 import menu from '../../assets/menu.svg';
 import {motion} from "framer-motion"
 
-interface HeaderProps {}
+interface HeaderProps {
+  
+}
 
 export const Header: React.FC<HeaderProps> = () => {
   const [active, setIsActive] = useState<boolean>(false);
@@ -74,7 +76,7 @@ export const Header: React.FC<HeaderProps> = () => {
             active ? 'w-[100%] bg-white dark:bg-[#020617]' : 'w-0'
           } h-screen overflow-hidden transition-all duration-300 ease-in-out z-50 absolute top-0 left-0 lg:hidden`}
         >
-          <ul className="mt-10">
+          <ul className="mt-10 ml-3">
             <li className="mb-4 text-[1.2rem] flex justify-between items-center font-semibold text-style tracking-[-0.025rem]">
               <Link to="/" onClick={() => setIsActive(false)}>
                 Home
