@@ -8,7 +8,8 @@ export const Invitation = () => {
     <div className="flex justify-center items-center mt-20">
      <div>
        <img src={attend} alt="img" className="w-[400px] h-[300px] object-scale-down mx-auto md:w-[50%] md:h-[50%]"/>
-
+    <div className='flex justify-center items-center'>
+      
       <motion.div
        whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -17,6 +18,7 @@ export const Invitation = () => {
     <img src={arrow} alt="arrow" className="" />
     </Button>
       </motion.div>
+    </div>
 
      </div>
     </div>
