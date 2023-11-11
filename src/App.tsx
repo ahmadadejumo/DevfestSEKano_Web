@@ -1,9 +1,9 @@
 import './App.css';
 import { Header } from '@/components/ui/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { About } from '@/Pages/About';
+import { Agenda } from '@/Pages/Agenda';
 import { Contact } from '@/Pages/Contact';
-import { Price } from '@/Pages/Price';
+import { Sponsors } from '@/Pages/Sponsors';
 import { Home } from '@/Pages/Home';
 function App() {
 
@@ -13,9 +13,9 @@ function App() {
     <Header />
     <Routes>
       <Route path='/' element={<Home />}/>
-      <Route path='about-us' element={<About />}/>
+      <Route path='agenda' element={<Agenda />}/>
       <Route path='contact-us' element={<Contact />}/>
-      <Route path='price' element={<Price />}/>
+      <Route path='sponsors' element={<Sponsors />}/>
     </Routes>
     </div>
     </BrowserRouter>

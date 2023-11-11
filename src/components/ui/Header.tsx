@@ -54,13 +54,13 @@ export const Header: React.FC<HeaderProps> = () => {
                 <Link to="/"> Home</Link>
               </li>
               <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
-                <Link to="/"> Agenda</Link>
+                <Link to="/agenda"> Agenda</Link>
               </li>
               <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
-                <Link to="/"> Contact</Link>
+                <Link to="/contact"> Contact</Link>
               </li>
               <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
-                <Link to="/"> Sponsors</Link>
+                <Link to="/sponsors"> Sponsors</Link>
               </li>
             </ul>
           </div>
@@ -98,7 +98,7 @@ export const Header: React.FC<HeaderProps> = () => {
               )}
             </li>
             <li className="mb-4 text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
-              <Link to="/" onClick={() => setIsActive(false)}>
+              <Link to="/agenda" onClick={() => setIsActive(false)}>
                 Agenda
               </Link>
             </li>
@@ -108,12 +108,12 @@ export const Header: React.FC<HeaderProps> = () => {
               </Link>
             </li>
             <li className="mb-4 text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
-              <Link to="/" onClick={() => setIsActive(false)}>
+              <Link to="/sponsors" onClick={() => setIsActive(false)}>
                 Sponsors
               </Link>
             </li>
             <li className="mb-4 text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
-              <Link to="/" onClick={() => setIsActive(false)}>
+              <Link to="/contact" onClick={() => setIsActive(false)}>
                 Contact
               </Link>
             </li>
