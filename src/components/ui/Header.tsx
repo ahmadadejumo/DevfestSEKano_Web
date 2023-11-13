@@ -19,20 +19,6 @@ export const Header: React.FC<HeaderProps> = () => {
     console.log(active);
   };
 
-  // useEffect function to handle outside click to toggle
-  // useEffect(() => {
-  //   const handleOutsideClick = (e: MouseEvent) => {
-  //     if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-  //       setIsActive(false);
-  //     }
-  //   };
-
-  //   document.addEventListener("mousedown", handleOutsideClick);
-
-  //   return () => {
-  //     document.removeEventListener("mousedown", handleOutsideClick);
-  //   };
-  // }, [menuRef]);
 
   return (
     <nav className="bg-transparent w-full">
@@ -49,7 +35,7 @@ export const Header: React.FC<HeaderProps> = () => {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col text-[#1E1E1E] md:flex-row md:gap-[1.9375rem] ">
+            <ul className="flex md:mb-4 flex-col text-[#1E1E1E] md:flex-row md:gap-[1.9375rem] ">
               <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
                 <Link to="/"> Home</Link>
               </li>
