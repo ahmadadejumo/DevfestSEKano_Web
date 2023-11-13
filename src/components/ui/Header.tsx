@@ -6,9 +6,7 @@ import arrow from "../../assets/arrow.svg";
 import menu from "../../assets/menu.svg";
 import { motion } from "framer-motion";
 
-interface HeaderProps {
-  
-}
+interface HeaderProps {}
 
 export const Header: React.FC<HeaderProps> = () => {
   const [active, setIsActive] = useState<boolean>(false);
@@ -71,11 +69,11 @@ export const Header: React.FC<HeaderProps> = () => {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className="flex md:order-2"
         >
-          <Button className="btn rounded-[3.375rem] md:rounded-[3rem] box py-[0.21rem] md:py-[1.5rem] px-[0.5rem] md:pl-[2rem] md:pr-[1rem] bg-[#34A853] hover:bg-[#42b561] flex items-center gap-2">
+          <Button className="btn rounded-[3.375rem] md:rounded-[3rem] h-[28px] w-[38px] box py-[0.21rem] md:py-[1.5rem] px-[0.5rem] md:pl-[2rem] md:pr-[1rem] bg-[#34A853] hover:bg-[#42b561] flex items-center gap-2">
             <span className="hidden md:block text-[0.9375rem] font-bold leading-normal tracking-[-0.025rem]text-style text-[#FFFFFF]">
               Get Your Tickets
             </span>
-            <img src={arrow} alt="arrow" />
+            <img src={arrow} alt="arrow" className="w-[30px]" />
           </Button>
         </motion.div>
 
