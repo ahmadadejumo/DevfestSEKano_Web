@@ -11,7 +11,7 @@ export const Hosts = () => {
         Hosts🔥
       </h2>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-4">
+      {/* <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-4">
         <HostCard />
         <img
           src={code}
@@ -26,7 +26,7 @@ export const Hosts = () => {
         <img src={code} className="absolute  -left-10 w-[2.81613rem]" />
         <HostCard />
         <HostCard />
-      </div>
+      </div> */}
     </div>
   );
 };

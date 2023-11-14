@@ -33,17 +33,17 @@ export const Header: React.FC<HeaderProps> = () => {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <ul className="flex md:mb-4 flex-col text-[#1E1E1E] md:flex-row md:gap-[1.9375rem] ">
-              <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
+            <ul className="flex flex-col text-[#1E1E1E] md:flex-row md:gap-[1.9375rem] ">
+              <li className="text-[1.1rem] font-semibold text-style tracking-[-0.025rem]">
                 <Link to="/"> Home</Link>
               </li>
-              <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
+              <li className="text-[1.1rem] font-semibold text-style tracking-[-0.025rem]">
                 <Link to="/agenda"> Agenda</Link>
               </li>
-              <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
+              <li className="text-[1.1rem] font-semibold text-style tracking-[-0.025rem]">
                 <Link to="/contact"> Contact</Link>
               </li>
-              <li className="text-[1.2rem] font-semibold text-style tracking-[-0.025rem]">
+              <li className="text-[1.1rem] font-semibold text-style tracking-[-0.025rem]">
                 <Link to="/sponsors"> Sponsors</Link>
               </li>
             </ul>
@@ -55,11 +55,11 @@ export const Header: React.FC<HeaderProps> = () => {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className="flex md:order-2"
         >
-          <Button className="btn rounded-[3.375rem] md:rounded-[3rem] h-[28px] w-[38px] box py-[0.21rem] md:py-[1.5rem] px-[0.5rem] md:pl-[2rem] md:pr-[1rem] bg-[#34A853] hover:bg-[#42b561] flex items-center gap-2">
-            <span className="hidden md:block text-[0.9375rem] font-bold leading-normal tracking-[-0.025rem]text-style text-[#FFFFFF]">
+          <Button className="btn rounded-[3.375rem] md:rounded-[3rem] box pt-[0.21rem] pr-[0.49594rem] pb-[0.197rem] pl-[0.5rem] md:pt-[0.66644rem] md:pr-[1.73894rem] md:pb-[0.66644rem] md:pl-[2.13375rem] px-[0.5rem] bg-[#34A853] hover:bg-[#42b561] flex md:inline-flex items-center md:gap-[0.09144rem]">
+            <span className="hidden md:block text-[0.9375rem] font-bold leading-normal tracking-[-0.025rem] text-style text-[#FFFFFF]">
               Get Your Tickets
             </span>
-            <img src={arrow} alt="arrow" className="w-[30px]" />
+            <img src={arrow} alt="arrow" className="w-[0.70919rem] h-[0.70919rem] md:w-[2rem] md:h-[2rem]" />
           </Button>
         </motion.div>
 

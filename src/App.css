@@ -20,6 +20,10 @@
   font-style: normal;
 }
 
+.fw {
+  font-weight: 400;
+}
+
 .box {
   box-shadow: #F8BB15 2.4px 2.4px 3.2px;
 }
