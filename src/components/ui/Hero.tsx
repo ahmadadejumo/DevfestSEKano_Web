@@ -22,7 +22,7 @@ export const Hero = () => {
       </div>
 
       <div className="mt-[100px] md:mt-[5rem]">
-        <h1 className="text-center text-[1.25rem] tracking-[-0.0625rem] font-semibold md:text-[4.29788rem] md:font-bold md:tracking-[-0.125rem] leading-normal">
+        <h1 className="text-center text-[1.25rem] tracking-[-0.0625rem] md:text-[4.29788rem] font-bold md:tracking-[-0.125rem] leading-normal">
           Welcome to the Devfest <br />{" "}
           <span className="text-[#34A853]">Student Edition</span> Kano!
         </h1>

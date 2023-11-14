@@ -8,7 +8,7 @@ import globe from "../../assets/globe.svg";
 export const Collaborators: React.FC = () => {
   return (
     <div className="">
-      <div className="flex relative flex-wrap justify-center gap-4 mt-[5rem] md:mt-[6rem] w-full mx-auto">
+      <div className="flex relative flex-wrap justify-center gap-y-[0.8125rem] gap-x-[1.8125rem] md:gap-[1.1875rem] mt-[5rem] md:mt-[6rem] w-full mx-auto">
         <img className=" object-scale-down w-[10rem] h-[0.87744rem] md:w-[20rem] md:h-[2.82613rem]" src={aliko} alt="adust tech" />
         <img className=" object-scale-down w-[10rem] h-[0.87744rem] md:w-[20rem] md:h-[2.82613rem]" src={bayero} alt="buk kano" />
         <img
@@ -18,7 +18,7 @@ export const Collaborators: React.FC = () => {
         />
         <img className=" object-scale-down w-[10rem] h-[0.87744rem] md:w-[20rem] md:h-[2.82613rem]" src={northwest} alt="maitama sule kano" />
       </div>
-      <div className="relative w-full mt-8">
+      <div className="relative w-full mt-4 md:mt-8">
         <img src={green} alt="" className="absolute" />
         <img src={yellow} alt="" />
       </div>
