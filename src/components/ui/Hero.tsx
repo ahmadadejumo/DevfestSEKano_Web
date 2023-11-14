@@ -37,7 +37,7 @@ export const Hero = () => {
 
         <p className="text-center mx-auto w-[13.4375rem] h-[1.625rem] md:w-[54.9375rem] text-[#1E1E1E] text-[0.625rem] font-semibold leading-normal md:text-[1.5rem] text-style tracking-[-0.025rem]">
           "DevFest Student Edition: Where 'Ctrl + Z' isn't just for life, but
-          also for tech!"
+          also for tech"
         </p>
       </div>
 
