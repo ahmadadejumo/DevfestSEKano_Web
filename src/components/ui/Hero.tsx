@@ -35,7 +35,7 @@ export const Hero = () => {
           className="absolute -z-10 w-[5.23719rem] h-[3.70781rem] md:w-[13.24725rem] md:h-[9.73338rem] right-6 -top-8 md:-top-[14rem] md:right-10"
         />
 
-        <p className="text-center mx-auto w-[13.4375rem] h-[1.625rem] md:w-[54.9375rem] text-[#1E1E1E] text-[10px] font-semibold leading-normal md:text-[1.5rem] text-style tracking-[-0.025rem]">
+        <p className="text-center mx-auto w-[13.4375rem] h-[1.625rem] md:w-[54.9375rem] text-[#1E1E1E] text-[0.625rem] font-semibold leading-normal md:text-[1.5rem] text-style tracking-[-0.025rem]">
           "DevFest Student Edition: Where 'Ctrl + Z' isn't just for life, but
           also for tech!"
         </p>
