@@ -1,5 +1,5 @@
-// import { HostCard } from "./HostCard";
-// import code from "../../assets/code.png";
+import { HostCard } from "./HostCard";
+import code from "../../assets/code.png";
 
 export const Hosts = () => {
   return (
