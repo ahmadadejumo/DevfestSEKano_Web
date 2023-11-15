@@ -1,10 +1,13 @@
 import React, { useState, useRef } from "react";
 import { Button } from "./button";
-import { Link } from "react-router-dom";
-import { X } from "lucide-react";
+// import { Link } from "react-router-dom";
+// import { X } from "lucide-react";
 import arrow from "../../assets/arrow.svg";
-import menu from "../../assets/menu.svg";
+// import menu from "../../assets/menu.svg";
+import logo from "../../assets/logo.png";
+import smalllogo from "../../assets/smalllogo.png";
 import { motion } from "framer-motion";
+
 
 interface HeaderProps {}
 
@@ -22,18 +25,14 @@ export const Header: React.FC<HeaderProps> = () => {
     <nav className="bg-transparent w-full">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <div className="flex items-center gap-2 justify-between">
-          <img
-            onClick={handleNavBar}
-            src={menu}
-            alt="menu"
-            className="mb-1 cursor-pointer md:hidden"
-          />
+        <img className='w-[2.25rem] h-[1.09256rem] md:hidden' src={smalllogo} alt="" srcset="" />
 
           <div
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col text-[#1E1E1E] md:flex-row md:gap-[1.9375rem] ">
+            <img src={logo} className="w-[5.79194rem] h-[2.8125rem] hidden md:block" alt="" srcset="" />
+            {/* <ul className="flex flex-col text-[#1E1E1E] md:flex-row md:gap-[1.9375rem] ">
               <li className="text-[1.1rem] font-semibold text-style tracking-[-0.025rem]">
                 <Link to="/"> Home</Link>
               </li>
@@ -46,7 +45,7 @@ export const Header: React.FC<HeaderProps> = () => {
               <li className="text-[1.1rem] font-semibold text-style tracking-[-0.025rem]">
                 <Link to="/sponsors"> Sponsors</Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
 
@@ -63,7 +62,7 @@ export const Header: React.FC<HeaderProps> = () => {
           </Button>
         </motion.div>
 
-        <ul
+        {/* <ul
           ref={menuRef}
           className={`mobile-menu ${
             active ? "w-[100%] bg-white dark:bg-[#020617]" : "w-0"
@@ -102,7 +101,7 @@ export const Header: React.FC<HeaderProps> = () => {
               </Link>
             </li>
           </ul>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );

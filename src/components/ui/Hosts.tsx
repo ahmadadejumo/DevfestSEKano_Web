@@ -1,17 +1,18 @@
-import { HostCard } from "./HostCard";
-import code from "../../assets/code.png";
+// import { HostCard } from "./HostCard";
+// import code from "../../assets/code.png";
 
 export const Hosts = () => {
   return (
-    <div className="w-[90%] relative md:w-[80%] mt-20 pb-20 md:mt-[10rem] mx-auto bg-[#FFFAEB]">
+    <div className="mt-20 md:mt-[10rem] flex justify-center items-center ">
+       <div className="w-[90%] pt-6 relative pb-20  mx-auto bg-[#FFFAEB]">
       <h2 className="text-center text-[1.3rem] text-[#1E1E1E] text-style md:text-[2.5rem] font-bold leading-normal tracking-[-0.0625rem]">
         Meet Our Amazing
       </h2>
       <h2 className="text-[1.3rem] text-[#E94435] text-center text-style md:text-[2.5rem] font-bold leading-normal tracking-[-0.0625rem]">
-        Hosts🔥
+        Speakers🔥
       </h2>
 
-      {/* <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-4">
+      <div className="grid mt-[2rem] md:mt-[5rem] grid-cols-1 sm:grid-cols-2 sm:gap-x-6 sm:w-[90%] md:grid-cols-2 lg:grid-cols-3 gap-6 md:w-[90%] md:gap-x-[6.25rem] mx-auto">
         <HostCard />
         <img
           src={code}
@@ -19,14 +20,15 @@ export const Hosts = () => {
         />
         <HostCard />
         <HostCard />
-        <img src={code} className="absolute  -left-5 w-[2.81613rem]" />
+        <HostCard />
+        <HostCard />
+        <HostCard />
+        <img src={code} className="absolute -left-5 w-[2.81613rem]" />
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-10">
-        <HostCard />
-        <img src={code} className="absolute  -left-10 w-[2.81613rem]" />
-        <HostCard />
-        <HostCard />
-      </div> */}
     </div>
+    </div>
+   
   );
 };
+
+{/* <img src={code} className="absolute  -left-10 w-[2.81613rem]" /> */}

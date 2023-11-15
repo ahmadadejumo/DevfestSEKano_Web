@@ -7,10 +7,10 @@ import arrow from "../../assets/arrow.svg";
 import { motion } from "framer-motion";
 export const Hero = () => {
   return (
-    <div className=" ">
+    <div className="">
       <div className="flex items-center justify-center">
         <img
-          className="block absolute top-4 md:hidden w-[156px]"
+          className="block md:hidden w-[156px]"
           src={mobilehero}
           alt="hero img"
         />
@@ -21,23 +21,23 @@ export const Hero = () => {
         />
       </div>
 
-      <div className="mt-[100px] md:mt-[5rem]">
-        <h1 className="text-center text-[1.25rem] tracking-[-0.0625rem] md:text-[4.29788rem] font-bold md:tracking-[-0.125rem] leading-normal">
+      <div className="mt-[30px] md:mt-[4rem]">
+        <h1 className="text-center text-[1.25rem] tracking-[-0.0625rem] md:text-[4.29788rem] font-bold md:leading-[4.5rem]">
           Welcome to the Devfest <br />{" "}
           <span className="text-[#34A853]">Student Edition</span> Kano!
         </h1>
       </div>
 
-      <div className="relative mt-[5px]">
+      <div className="relative mt-[10px] md:mt-[15px]">
         <img
           src={group}
           alt=""
           className="absolute -z-10 w-[5.23719rem] h-[3.70781rem] md:w-[13.24725rem] md:h-[9.73338rem] right-6 -top-8 md:-top-[14rem] md:right-10"
         />
 
-        <p className="text-center mx-auto w-[13.4375rem] h-[1.625rem] md:w-[54.9375rem] text-[#1E1E1E] text-[0.625rem] font-semibold leading-normal md:text-[1.5rem] text-style tracking-[-0.025rem]">
+        <p className="text-center mx-auto w-[13.4375rem] h-[1.625rem] md:w-full text-[#1E1E1E] text-[0.625rem] font-semibold leading-normal md:text-[1.5rem] text-style tracking-[-0.025rem]">
           "DevFest Student Edition: Where 'Ctrl + Z' isn't just for life, but
-          also for tech"
+          also for tech!"
         </p>
       </div>
 
