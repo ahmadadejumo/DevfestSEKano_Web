@@ -14,7 +14,7 @@ export const Collaborators: React.FC = () => {
         <img
           src={globe}
           alt=""
-          className="absolute hidden md:block right-0 md:right-[2rem] md:top-4 md:w-[8.357rem] object-scale-down"
+          className="absolute hidden md:block right-0 md:right-[2rem] md:top-12 md:w-[6rem] object-scale-down"
         />
         <img className=" object-scale-down w-[10rem] h-[0.87744rem] md:w-[20rem] md:h-[2.82613rem]" src={northwest} alt="maitama sule kano" />
       </div>

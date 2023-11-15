@@ -42,10 +42,10 @@ export const CountDown: React.FC = () => {
   }, [targetDate]);
 
   return (
-    <div className="my-10 flex w-full justify-center items-center relative">
+    <div className="mb-10 mt-16 flex w-full justify-center items-center relative">
         <div className="w-[90%] sm:w-[80%] md:w-[70%]">
               <h2 className="text-[1.3rem] text-[#1E1E1E] text-center text-style md:text-[2.5rem] font-bold leading-normal tracking-[-0.0625rem]">Count-Down 😌</h2>
-            <img src={globe} alt="img" className="absolute w-[2.49431rem] left-0 md:left-12 md:w-[7rem]" />
+            <img src={globe} alt="img" className="absolute w-[2.49431rem] left-0 md:left-12 md:w-[5rem] z-10"/>
             
         <div className="bg-[#FFF1C4] py-4 md:py-5 relative">
           <img src={under} alt="img" className='absolute -z-20 w-[21.06306rem] md:w-[55.25rem] md:h-[19.3125rem] right-8 top-10 md:top-4 md:right-6 '/>

@@ -1,0 +1,18 @@
+<svg width="178" height="24" viewBox="0 0 178 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="178" height="24" fill="#1E1E1E"/>
+<g id="MacBook Pro 16&#34; - 1" clip-path="url(#clip0_0_1)">
+<rect width="1728" height="6395" transform="translate(-61 -4725)" fill="white"/>
+<g id="Frame 74" clip-path="url(#clip1_0_1)">
+<rect width="1728" height="702" transform="translate(-61 -407)" fill="#F3F5F7"/>
+<path id="Arrow 1" d="M177.061 13.0607C177.646 12.4749 177.646 11.5251 177.061 10.9393L167.515 1.3934C166.929 0.807611 165.979 0.807611 165.393 1.3934C164.808 1.97919 164.808 2.92893 165.393 3.51472L173.879 12L165.393 20.4853C164.808 21.0711 164.808 22.0208 165.393 22.6066C165.979 23.1924 166.929 23.1924 167.515 22.6066L177.061 13.0607ZM0 13.5H176V10.5H0V13.5Z" fill="#E94435"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1728" height="6395" fill="white" transform="translate(-61 -4725)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="1728" height="702" fill="white" transform="translate(-61 -407)"/>
+</clipPath>
+</defs>
+</svg>
