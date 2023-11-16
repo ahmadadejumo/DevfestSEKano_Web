@@ -8,6 +8,7 @@ import {useEffect} from "react"
 import {CountdownItem } from "./CountdownItem"
 import time from "../../assets/time.svg"
 import under from "../../assets/under.png"
+import WavyText from "./WavyText"
 
 type TimeRemaining = {
   days: number;
@@ -44,7 +45,7 @@ export const CountDown: React.FC = () => {
   return (
     <div className="mb-10 mt-16 flex w-full justify-center items-center relative">
         <div className="w-[90%] sm:w-[80%] md:w-[70%]">
-              <h2 className="text-[1.3rem] text-[#1E1E1E] text-center text-style md:text-[2.5rem] font-bold leading-normal tracking-[-0.0625rem]">Count-Down 😌</h2>
+              <WavyText />
             <img src={globe} alt="img" className="absolute w-[2.49431rem] left-0 md:left-12 md:w-[5rem] z-10"/>
             
         <div className="bg-[#FFF1C4] py-4 md:py-5 relative">
