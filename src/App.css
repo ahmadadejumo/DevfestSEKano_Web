@@ -2,7 +2,25 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-   font-family: 'Inter';
+  font-family: "Inter";
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px whitesmoke;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #089D57;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #028b4b;
 }
 
 .fontstyle {
@@ -13,7 +31,7 @@
 }
 
 .work-font {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .wrap {
@@ -28,45 +46,62 @@
   font-weight: 400;
 }
 .swiper-slide {
-  width: 30rem !important;
-  /* height: 100% !important; */
+  width: 100% !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.swiper-button-prev {
+  position: absolute !important;
+  left: 0px !important;
+  /* height: 9px !important; */
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+} 
+.swiper-button-next {
+  position: absolute !important;
+  right: 0px !important;
 }
 
 .box {
-  box-shadow: #F8BB15 2.4px 2.4px 3.2px;
+  box-shadow: #f8bb15 2.4px 2.4px 3.2px;
 }
 .second-box {
-  box-shadow: #E94435 2.4px 2.4px 3.2px;
+  box-shadow: #e94435 2.4px 2.4px 3.2px;
 }
 
-.arrow{
+.arrow {
   width: 30%;
 }
 
 .bg {
-  background-color: #FFFAEB !important;
+  background-color: #fffaeb !important;
 }
 
 .card {
-box-shadow: -7px 9px 0px -1px rgba(0,0,0,0.76);
--webkit-box-shadow: -7px 9px 0px -1px rgba(0,0,0,0.76);
--moz-box-shadow: -7px 9px 0px -1px rgba(0,0,0,0.76);
+  box-shadow: -7px 9px 0px -1px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: -7px 9px 0px -1px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: -7px 9px 0px -1px rgba(0, 0, 0, 0.76);
 }
 
-.move:hover img{
+.move:hover img {
   right: -1.5rem;
   top: -1.5rem;
   width: 70%;
 }
 
-
 @media screen and (min-width: 768px) {
   .arrow {
     width: 100%;
   }
-  .move:hover img{
-  right: -4rem;
-  top: -3rem;
-  width: 50%;
-}
+  .move:hover img {
+    right: -4rem;
+    top: -3rem;
+    width: 50%;
+  }
+  .swiper-slide {
+    width: 35rem !important;
+  }
 }
