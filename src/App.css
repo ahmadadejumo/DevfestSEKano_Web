@@ -100,8 +100,7 @@ h2.waviy {
 h2.waviy span {
   position: relative;
   display: inline-block;
-  font-size: 1.3rem;
-  /* font-family: "Work Sans", sans-serif; */
+  font-size: 1.4rem;
   color: #1e1e1e;
   text-align: center;
   font-weight: 700;
@@ -130,6 +129,6 @@ h2.waviy span {
     width: 35rem !important;
   }
   h2.waviy span {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   }
 }

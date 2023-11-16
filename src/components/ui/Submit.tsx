@@ -7,7 +7,7 @@ export const Submit = () => {
     <div className="mt-6">
        <div>
         <div className="relative">
-           <h2 className="text-[#1E1E1E] text-center text-[1.3rem] md:text-[3rem] text-style font-bold leading-normal mx-auto px-2 sm:w-[80%] md:w-[70%]">Submit your application to Speak / Host Workshop at DevFest Student Edition Kano 2023.</h2>
+           <h2 className="text-[#1E1E1E] text-center text-[1.3rem] md:text-[3rem] text-style font-bold leading-normal md:leading-[3.5rem] mx-auto px-2 sm:w-[80%] md:w-[70%]">Submit your application to Speak / Host Workshop at DevFest Student Edition Kano 2023.</h2>
            <img src={code} alt="img" className="hidden md:w-[10%] md:block absolute md:-top-2 md:left-[22rem] -z-10"/>
         </div>
        <div className="flex justify-center items-center">

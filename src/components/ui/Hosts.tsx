@@ -9,7 +9,7 @@ export const Hosts = () => {
         Meet Our Amazing
       </h2>
       <h2 className="text-[1.3rem] text-[#E94435] text-center text-style md:text-[2.5rem] font-bold leading-normal tracking-[-0.0625rem]">
-        Speakers🔥
+        Speakers <span className="">🔥</span>
       </h2>
 
       <div className="grid mt-[2rem] md:mt-[5rem] grid-cols-1 sm:grid-cols-2 sm:gap-x-6 sm:w-[90%] md:grid-cols-2 lg:grid-cols-3 gap-6 md:w-[90%] md:gap-x-[6.25rem] mx-auto">
