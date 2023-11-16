@@ -1,24 +1,29 @@
-import React from "react";
 import { Button } from "./button";
 import arrow from "../../assets/arrow.svg";
 import logo from "../../assets/logo.png";
 import smalllogo from "../../assets/smalllogo.png";
 import { motion } from "framer-motion";
 
-
-export const Header: React.FC<HeaderProps> = () => {
-
+export const Header = () => {
   return (
     <nav className="bg-transparent w-full">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <div className="flex items-center gap-2 justify-between">
-        <img className='w-[2.25rem] h-[1.09256rem] md:hidden' src={smalllogo} alt="" />
+          <img
+            className="w-[2.25rem] h-[1.09256rem] md:hidden"
+            src={smalllogo}
+            alt=""
+          />
 
           <div
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <img src={logo} className="w-[4rem] h-[2rem] hidden md:block" alt="" />
+            <img
+              src={logo}
+              className="w-[4rem] h-[2rem] hidden md:block"
+              alt=""
+            />
           </div>
         </div>
 
@@ -31,10 +36,13 @@ export const Header: React.FC<HeaderProps> = () => {
             <span className="hidden md:block text-[0.9375rem] font-bold leading-normal tracking-[-0.025rem] text-style text-[#FFFFFF]">
               Get Your Tickets
             </span>
-            <img src={arrow} alt="arrow" className="w-[0.70919rem] h-[0.70919rem] md:w-[2rem] md:h-[2rem]" />
+            <img
+              src={arrow}
+              alt="arrow"
+              className="w-[0.70919rem] h-[0.70919rem] md:w-[2rem] md:h-[2rem]"
+            />
           </Button>
         </motion.div>
-
       </div>
     </nav>
   );
