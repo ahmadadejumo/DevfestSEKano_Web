@@ -15,7 +15,7 @@ export const Submit = () => {
              whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-                 <Button className="rounded-[3.375rem] mt-4 md:rounded-[3rem] box pt-[0.3rem] pl-[0.9rem] pb-[0.3rem] pr-[0.9rem] md:pt-[0.66644rem] md:pl-[2rem] md:pr-[1.73894rem] md:pb-[0.66644rem] md:r-[2.13375rem] hover:bg-[#42b561] bg-[#34A853]  flex items-center md:gap-2">
+                 <Button className="rounded-[3.375rem] mt-4 md:rounded-[3rem] box pt-[0.3rem] pl-[0.9rem] pb-[0.3rem] pr-[0.9rem] md:pt-[0.66644rem] md:pl-[2rem] md:pr-[1.73894rem] md:pb-[0.66644rem] md:r-[2.13375rem] hover:bg-[#5d8dd9] bg-[#4285F4]  flex items-center md:gap-2">
             <span className="text-[0.5rem] font-semibold leading-normal tracking-[-0.025rem] text-style text-[#FFFFFF] md:text-[0.94531rem] md:font-bold">
               Apply
             </span>

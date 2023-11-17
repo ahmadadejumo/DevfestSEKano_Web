@@ -30,7 +30,7 @@ export const Testimony = () => {
           className="w-[80%] mt-6"
           modules={[Navigation, A11y, Autoplay]}
           autoplay={{
-            delay: 30000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           // slidesPerView={3}

@@ -28,7 +28,7 @@ export const Hero = () => {
         </h1>
       </div>
 
-      <div className="relative mt-[10px] md:mt-[15px]">
+      <div className="relative mt-[] md:mt-[15px]">
         <img
           src={group}
           alt=""

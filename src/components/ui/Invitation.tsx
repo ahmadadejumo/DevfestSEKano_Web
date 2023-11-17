@@ -2,13 +2,20 @@ import attend from "../../assets/attend.png";
 import { Button } from "./button";
 import arrow from "../../assets/arrow.svg";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 export const Invitation = () => {
+  const image = {
+    src: attend,
+    alt: "img",
+    };
   return (
     <div className="flex justify-center items-center mt-20">
       <div>
-        <img
-          src={attend}
-          alt="img"
+        <LazyLoadImage
+          src={image.src}
+          alt={image.alt}
+          effect='blur'
           className="w-[400px] h-[300px] object-scale-down mx-auto md:w-[50%] md:h-[50%]"
         />
         <div className="flex justify-center items-center">
