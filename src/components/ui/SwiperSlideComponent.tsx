@@ -20,7 +20,7 @@ const TestimonialCard = ({
     >
       <span
         style={{ color: qouteColor }}
-        className="absolute font-bold work-font text-[2.23931rem] md:text-[6rem] top-4 left-4"
+        className="absolute font-bold work-font text-[2.23931rem] md:text-[6rem] top-2 left-4"
       >
         &#8220;
       </span>
