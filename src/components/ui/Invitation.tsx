@@ -10,7 +10,12 @@ export const Invitation = () => {
     alt: "img",
     };
   return (
-    <div className="flex justify-center items-center mt-20">
+    <motion.div 
+      className="flex justify-center items-center mt-20"
+      whileInView={{opacity:[0,1]}}
+      // animate={{opacity:1}}
+      transition={{duration:2,delay:0.5}}
+    >
       <div>
         <LazyLoadImage
           src={image.src}
@@ -32,6 +37,6 @@ export const Invitation = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

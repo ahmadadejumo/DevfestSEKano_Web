@@ -3,7 +3,7 @@ import code from "../../assets/code.png";
 
 export const Hosts = () => {
   return (
-    <div className="mt-20 md:mt-[10rem] flex justify-center items-center ">
+    <div className="mt-20 md:mt-[10rem] overflow-hidden flex justify-center items-center ">
        <div className="w-[90%] pt-6 relative pb-20  mx-auto bg-[#FFFAEB]">
       <h2 className="text-center text-[1.3rem] text-[#1E1E1E] text-style md:text-[2.5rem] font-bold leading-normal tracking-[-0.0625rem]">
         Meet Our Amazing

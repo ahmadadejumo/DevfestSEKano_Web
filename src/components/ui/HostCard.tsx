@@ -3,17 +3,34 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import person from "../../assets/person.png";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
+import {motion} from 'framer-motion'
 export const HostCard = () => {
+   // Declare the width variable
+  let width:number;
+   //  Comparing the window variable to "undefined" to avoid "window is not defined" error
+  if(typeof window !== 'undefined'){
+    // setting the width variable to the width of the screen
+    width = window.innerWidth
+  }
+  // x initial animation based on random number
+  const xInitial = Math.floor(Math.random() *2 ) == 0 ? -300 : 300
+  // Function that compares the width to the max width of mobile Phone(640) and conditionally returns the differnt animation style
+  const SpeakerAnimation= ()=>  width <= 640 ? {x:[xInitial,0]} : {scale:[0,0.5,1]}
+
   const image = {
     src: person,
     alt: "img",
     width: "100%",
     height: "auto",
   };
+  // console.log()
 
   return (
-    <div>
+    <motion.div
+      whileInView={SpeakerAnimation()} 
+      transition={{duration:0.5,ease:'easeIn'}}
+      className='overflow-hidden'
+    >
       <Card className="w-[50%] sm:w-[15rem] md:w-[15.37rem] mx-auto">
         <CardContent className="card border-2 border-black">
           <LazyLoadImage
@@ -33,6 +50,6 @@ export const HostCard = () => {
           </p>
         </CardFooter>
       </Card>
-    </div>
+    </motion.div>
   );
 };

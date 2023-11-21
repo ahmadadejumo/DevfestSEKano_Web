@@ -8,7 +8,12 @@ export const Header = () => {
   return (
     <nav className="bg-transparent w-full">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <div className="flex items-center gap-2 justify-between">
+        <motion.div 
+          className="flex items-center gap-2 justify-between"
+          initial={{x:-300,opacity:0}}
+          animate={{x:0,opacity:1}}
+          transition={{type:'spring',duration:2}}
+        >
           <img
             className="w-[2.25rem] h-[1.09256rem] md:hidden"
             src={smalllogo}
@@ -25,12 +30,14 @@ export const Header = () => {
               alt=""
             />
           </div>
-        </div>
+        </motion.div>
 
         <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          className="flex md:order-2"
+          initial={{x:200,opacity:0}}
+          animate={{x:0,opacity:1,transition:{ duration:1, }}}
+          whileHover={{ scale: 1.1, transition:{type: "spring", stiffness: 400, damping: 10}}}
+          // transition={{ duration:2, }}
+          className="flex   md:order-2"
         >
           <Button className="btn rounded-[3.375rem] md:rounded-[3rem] box pt-[0.21rem] pr-[0.49594rem] pb-[0.197rem] pl-[0.5rem] md:pt-[0.66644rem] md:pr-[1.73894rem] md:pb-[0.66644rem] md:pl-[2.13375rem] px-[0.5rem] bg-[#34A853] hover:bg-[#42b561] flex md:inline-flex items-center md:gap-[0.09144rem]">
             <span className="hidden md:block text-[0.9375rem] font-bold leading-normal tracking-[-0.025rem] text-style text-[#FFFFFF]">
