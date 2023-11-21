@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import person from "../../assets/person.png";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
